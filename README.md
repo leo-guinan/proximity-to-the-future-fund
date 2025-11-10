@@ -142,6 +142,27 @@ The model can be validated and simulated using the provided Python implementatio
 
 ---
 
+### 11. The Proximity Token ($PROX)
+
+The mathematical framework of the Proximity to the Future Fund translates directly into a predictable crypto-economic model through the **Proximity Token ($PROX)**.
+
+$PROX implements:
+- **Predictable tokenomics** derived from observable state variables (F_t, L_t, τ_t, γ_t)
+- **Automatic minting** based on foresight efficiency and trust leverage
+- **Automatic burning** based on time violence (entropy and distrust)
+- **Trust-weighted staking** that rewards network coherence
+- **Adaptive monetary policy** that modulates speed to maintain stability
+
+For complete tokenomics documentation, see [The Proximity Token ($PROX): A Predictable Crypto-Economic Model](PROX_TOKENOMICS.md).
+
+Token mechanics can be simulated using `prox_token_simulation.py`, which demonstrates:
+- Supply evolution over time
+- Minting and burning dynamics
+- Staking reward calculations
+- Predictability analysis
+
+---
+
 **Author:** Leo Guinan  
 **Affiliation:** Idea Nexus Ventures / MetaSPN  
 **Draft Date:** November 2025
