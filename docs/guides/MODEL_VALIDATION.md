@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ### Run Validation Tests
 
 ```bash
-python3 prove_model.py
+python3 src/prove_model.py
 ```
 
 This will:
@@ -49,13 +49,13 @@ Runs complete Pod evolution over multiple cycles and validates:
 
 ## Output Files
 
-- `pod_simulation_results.png` - Visualization plots
-- `pod_simulation_results.csv` - Time series data
+- `results/figures/pod_simulation_results.png` - Visualization plots
+- `results/data/pod_simulation_results.csv` - Time series data
 
 ## Custom Simulations
 
 ```python
-from prove_model import PodState, simulate_pod
+from src.prove_model import PodState, simulate_pod
 
 # Create custom initial state
 initial_state = PodState(

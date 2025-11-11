@@ -8,10 +8,10 @@ This module provides comprehensive sensitivity analysis and ablation studies for
 
 - `sensitivity_analysis.py`: Main analysis functions
 - `visualize_sensitivity.py`: Visualization functions
-- `ablation_study_raw.csv`: Raw ablation study results
-- `ablation_study_summary.csv`: Aggregated ablation statistics
-- `sensitivity_analysis_raw.csv`: Raw sensitivity analysis results
-- `sensitivity_analysis_summary.csv`: Aggregated sensitivity statistics
+- `results/data/ablation_study_raw.csv`: Raw ablation study results
+- `results/data/ablation_study_summary.csv`: Aggregated ablation statistics
+- `results/data/sensitivity_analysis_raw.csv`: Raw sensitivity analysis results
+- `results/data/sensitivity_analysis_summary.csv`: Aggregated sensitivity statistics
 
 ## Features
 
@@ -96,7 +96,7 @@ ablation_df = run_ablation_study(
 ablation_summary = analyze_ablation_results(ablation_df)
 
 # Visualize
-plot_ablation_study(ablation_df, save_path="ablation_study.png")
+plot_ablation_study(ablation_df, save_path="results/figures/ablation_study.png")
 ```
 
 ### Run Sensitivity Analysis Only
@@ -118,8 +118,8 @@ results_df = run_sensitivity_analysis(
 summary_df = analyze_sensitivity_results(results_df)
 
 # Visualize
-plot_sensitivity_heatmaps(summary_df, save_path="sensitivity_heatmaps.png")
-plot_parameter_sensitivity(summary_df, save_path="parameter_sensitivity.png")
+plot_sensitivity_heatmaps(summary_df, save_path="results/figures/sensitivity_heatmaps.png")
+plot_parameter_sensitivity(summary_df, save_path="results/figures/parameter_sensitivity.png")
 ```
 
 ## Interpreting Results
@@ -152,11 +152,11 @@ The ablation study quantifies:
 
 ## Output Files
 
-- `sensitivity_analysis_raw.csv`: Raw sensitivity results
-- `sensitivity_analysis_summary.csv`: Aggregated sensitivity statistics
-- `ablation_study_raw.csv`: Raw ablation results
-- `ablation_study_summary.csv`: Aggregated ablation statistics
-- `sensitivity_heatmaps.png`: Sensitivity heatmap visualizations
-- `parameter_sensitivity.png`: Parameter sensitivity plots
-- `ablation_study.png`: Ablation study visualizations
+- `results/data/sensitivity_analysis_raw.csv`: Raw sensitivity results
+- `results/data/sensitivity_analysis_summary.csv`: Aggregated sensitivity statistics
+- `results/data/ablation_study_raw.csv`: Raw ablation results
+- `results/data/ablation_study_summary.csv`: Aggregated ablation statistics
+- `results/figures/sensitivity_heatmaps.png`: Sensitivity heatmap visualizations
+- `results/figures/parameter_sensitivity.png`: Parameter sensitivity plots
+- `results/figures/ablation_study.png`: Ablation study visualizations
 

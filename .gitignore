@@ -3,11 +3,23 @@ __pycache__/
 *$py.class
 *.so
 .Python
-*.png
-*.csv
-*.pdf
 .env
 venv/
 env/
 .venv
+
+# Results (keep structure, ignore large files if needed)
+# results/data/*.csv
+# results/figures/*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
 

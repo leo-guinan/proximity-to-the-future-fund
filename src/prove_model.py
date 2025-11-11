@@ -10,6 +10,11 @@ import matplotlib.pyplot as plt
 from dataclasses import dataclass
 from typing import List, Tuple
 import pandas as pd
+import os
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Constants
 F_MIN_STABILITY = 0.03  # Consistent stability threshold (0.02-0.05 range)
@@ -788,11 +793,15 @@ if __name__ == "__main__":
     
     # Generate visualization
     print("\nGenerating visualization plots...")
-    plot_simulation_results(df, save_path="pod_simulation_results.png")
+    results_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "results")
+    os.makedirs(os.path.join(results_dir, "figures"), exist_ok=True)
+    os.makedirs(os.path.join(results_dir, "data"), exist_ok=True)
+    
+    plot_simulation_results(df, save_path=os.path.join(results_dir, "figures", "pod_simulation_results.png"))
     
     # Export results to CSV with metadata
-    df.to_csv("pod_simulation_results.csv", index=False)
-    print("Results exported to pod_simulation_results.csv")
+    df.to_csv(os.path.join(results_dir, "data", "pod_simulation_results.csv"), index=False)
+    print("Results exported to results/data/pod_simulation_results.csv")
     print(f"Simulation metadata: seed={RANDOM_SEED}, F_min={F_MIN_STABILITY}, alpha_ref={ALPHA_REF}, capital_max_growth={CAPITAL_MAX_GROWTH}")
     
     # G. Run A4 Network Relativity comparison experiment
@@ -812,11 +821,11 @@ if __name__ == "__main__":
     print(f"Temporal Dilation (network): Δ(T_B_network - T_A_local) = {df_B['temporal_dilation_delta_network'].iloc[-1]:.4f}")
     
     # Generate comparison plots
-    plot_two_pods_comparison(df_A, df_B, save_path="two_pods_comparison.png")
+    plot_two_pods_comparison(df_A, df_B, save_path=os.path.join(results_dir, "figures", "two_pods_comparison.png"))
     
     # Export comparison results with metadata
-    df_A.to_csv("pod_A_results.csv", index=False)
-    df_B.to_csv("pod_B_results.csv", index=False)
+    df_A.to_csv(os.path.join(results_dir, "data", "pod_A_results.csv"), index=False)
+    df_B.to_csv(os.path.join(results_dir, "data", "pod_B_results.csv"), index=False)
     print("\nTwo-Pod comparison results exported to CSV files")
     print(f"Simulation metadata: seed={RANDOM_SEED}, v_rel_A={v_rel_A}, v_rel_B={v_rel_B}, c_t={c_t}")
 

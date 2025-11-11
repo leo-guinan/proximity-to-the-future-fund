@@ -8,7 +8,12 @@ from the Proximity to the Future Fund model.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from prove_model import (
+import os
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.prove_model import (
     PodState, TemporalCompoundingModel, simulate_pod,
     ALPHA_REF, CAPITAL_MAX_GROWTH, A4_SOFT_LINK_RHO,
     RANDOM_SEED, F_MIN_STABILITY
@@ -365,12 +370,16 @@ if __name__ == "__main__":
     print(f"Average Staking APY: {predictability['avg_staking_apy']:.2f}%")
     
     # Save results
-    token_df.to_csv("prox_token_simulation.csv", index=False)
-    print(f"\nToken simulation results saved to prox_token_simulation.csv")
+    results_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "results")
+    os.makedirs(os.path.join(results_dir, "figures"), exist_ok=True)
+    os.makedirs(os.path.join(results_dir, "data"), exist_ok=True)
+    
+    token_df.to_csv(os.path.join(results_dir, "data", "prox_token_simulation.csv"), index=False)
+    print(f"\nToken simulation results saved to results/data/prox_token_simulation.csv")
     
     # Generate visualizations
     print("\nGenerating visualizations...")
-    plot_token_supply_dynamics(token_df, save_path="prox_token_dynamics.png")
+    plot_token_supply_dynamics(token_df, save_path=os.path.join(results_dir, "figures", "prox_token_dynamics.png"))
     
     print("\nSimulation complete!")
 

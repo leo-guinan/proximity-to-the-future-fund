@@ -8,7 +8,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from prove_model import (
+import os
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.prove_model import (
     PodState, TemporalCompoundingModel, simulate_pod,
     simulate_two_pods_comparison,
     ALPHA_REF, CAPITAL_MAX_GROWTH, A4_SOFT_LINK_RHO,
@@ -356,12 +361,17 @@ def analyze_sensitivity_results(df: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    from visualize_sensitivity import (
+    from src.visualize_sensitivity import (
         plot_sensitivity_heatmaps,
         plot_parameter_sensitivity,
         plot_ablation_study,
         analyze_ablation_results
     )
+    
+    # Setup results directory
+    results_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "results")
+    os.makedirs(os.path.join(results_dir, "figures"), exist_ok=True)
+    os.makedirs(os.path.join(results_dir, "data"), exist_ok=True)
     
     print("=" * 60)
     print("SENSITIVITY ANALYSIS")
@@ -378,19 +388,19 @@ if __name__ == "__main__":
     )
     
     # Save raw results
-    results_df.to_csv("sensitivity_analysis_raw.csv", index=False)
-    print(f"\nRaw results saved to sensitivity_analysis_raw.csv")
+    results_df.to_csv(os.path.join(results_dir, "data", "sensitivity_analysis_raw.csv"), index=False)
+    print(f"\nRaw results saved to results/data/sensitivity_analysis_raw.csv")
     print(f"Total parameter combinations: {len(results_df)}")
     
     # Analyze and save summary
     summary_df = analyze_sensitivity_results(results_df)
-    summary_df.to_csv("sensitivity_analysis_summary.csv", index=False)
-    print(f"Summary saved to sensitivity_analysis_summary.csv")
+    summary_df.to_csv(os.path.join(results_dir, "data", "sensitivity_analysis_summary.csv"), index=False)
+    print(f"Summary saved to results/data/sensitivity_analysis_summary.csv")
     
     # Generate visualizations
     print("\nGenerating sensitivity analysis visualizations...")
-    plot_sensitivity_heatmaps(summary_df, save_path="sensitivity_heatmaps.png")
-    plot_parameter_sensitivity(summary_df, save_path="parameter_sensitivity.png")
+    plot_sensitivity_heatmaps(summary_df, save_path=os.path.join(results_dir, "figures", "sensitivity_heatmaps.png"))
+    plot_parameter_sensitivity(summary_df, save_path=os.path.join(results_dir, "figures", "parameter_sensitivity.png"))
     
     # Print key findings
     print("\n" + "=" * 60)
@@ -432,17 +442,17 @@ if __name__ == "__main__":
     )
     
     # Save ablation results
-    ablation_df.to_csv("ablation_study_raw.csv", index=False)
-    print(f"\nAblation study results saved to ablation_study_raw.csv")
+    ablation_df.to_csv(os.path.join(results_dir, "data", "ablation_study_raw.csv"), index=False)
+    print(f"\nAblation study results saved to results/data/ablation_study_raw.csv")
     
     # Analyze ablation results
     ablation_summary = analyze_ablation_results(ablation_df)
-    ablation_summary.to_csv("ablation_study_summary.csv", index=False)
-    print(f"Ablation summary saved to ablation_study_summary.csv")
+    ablation_summary.to_csv(os.path.join(results_dir, "data", "ablation_study_summary.csv"), index=False)
+    print(f"Ablation summary saved to results/data/ablation_study_summary.csv")
     
     # Generate ablation visualizations
     print("\nGenerating ablation study visualizations...")
-    plot_ablation_study(ablation_df, save_path="ablation_study.png")
+    plot_ablation_study(ablation_df, save_path=os.path.join(results_dir, "figures", "ablation_study.png"))
     
     # Print causal lift summary
     print("\n" + "=" * 60)

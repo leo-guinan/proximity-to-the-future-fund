@@ -2,168 +2,244 @@
 
 ## A Unified Architecture for Conscious Capital, Research, and Acceleration
 
----
-
-### Abstract
-
-The Proximity to the Future Fund is a recursive economic architecture that unites the roles of **hedge fund, accelerator, and startup** within a single bounded entity known as a **Pod**. Its purpose is to systematically increase a network's *proximity to the future*—the measurable ability to perceive, model, and act upon change faster than others without introducing instability. The system achieves this through a combination of predictive research, capital allocation, and iterative venture creation. The result is a structure that continuously compounds foresight, reduces operational entropy, and aligns capital with meaning.
+[![License: CC-BY-SA](https://img.shields.io/badge/License-CC--BY--SA-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ---
 
-### 1. Introduction: Time as Capital, Proximity as Leverage
+## Quick Start
 
-Traditional venture systems fragment the lifecycle of innovation across institutions: researchers predict, founders build, investors speculate. Each operates on a different clock speed and incentive horizon. The Proximity to the Future Fund integrates these functions within one continuous learning organism, where **time itself becomes the traded asset**.
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-Proximity to the future is defined as the **inverse of verification latency**—the delay between an insight's emergence and its verifiable impact on reality. Reducing this latency is equivalent to compressing the future into the present, a process that, if coordinated, compounds both financial and social returns.
+# Run model validation
+python3 src/prove_model.py
 
-This model turns three disciplines—research, capital management, and venture creation—into one recursive system:
+# Simulate token economics
+python3 src/prox_token_simulation.py
 
-* **Hedge Fund Layer**: Manages predictive capital based on trust-weighted future signals.
-* **Startup Layer**: Materializes those signals into functioning systems and market proofs.
-* **Accelerator Layer**: Trains and synchronizes the next generation of founders and researchers to repeat the process at higher fidelity.
-
-Each layer feeds the next, closing the feedback loop between insight and execution.
-
----
-
-### 2. Structural Overview: The Pod as a Temporal Engine
-
-A **Pod** is a small, self-contained portfolio (3–6 startups) with a shared operational core and pooled research capital. It functions simultaneously as a *time arbitrage machine* and *collective intelligence cell*. Each Pod maintains four synchronized subsystems:
-
-| Subsystem             | Primary Function                               | Key Metric                    | Output             | Feedback Loop                                         |
-| --------------------- | ---------------------------------------------- | ----------------------------- | ------------------ | ----------------------------------------------------- |
-| **Research Cell**     | Exploratory modeling, foresight analysis       | Predictive Accuracy           | Future Signals     | Informs hedge allocation and startup direction        |
-| **Hedge Layer**       | Allocates capital based on trust and timing    | Foresight Alpha               | Investment Returns | Funds new research and accelerates top performers     |
-| **Startup Layer**     | Builds applied ventures                        | Execution Velocity            | Market Proofs      | Extends the research horizon through real-world tests |
-| **Accelerator Layer** | Codifies learnings and redistributes playbooks | Knowledge Transfer Efficiency | Founder Maturity   | Increases Pod coherence and reduces time violence     |
-
-Over time, the Pod develops a *temporal intelligence profile*—a measurable representation of its capacity to see, act, and learn across multiple time horizons.
+# Run sensitivity analysis
+python3 src/sensitivity_analysis.py
+```
 
 ---
 
-### 3. Core Dynamics: The Temporal Arbitrage Loop
+## Overview
 
-The Pod's internal economy is governed by a **Temporal Arbitrage Loop**, which converts foresight into capital and back again.
+The Proximity to the Future Fund is a recursive economic architecture that unites the roles of **hedge fund, accelerator, and startup** within a single bounded entity known as a **Pod**. Its purpose is to systematically increase a network's *proximity to the future*—the measurable ability to perceive, model, and act upon change faster than others without introducing instability.
 
-1. **Perceive:** Researchers identify emerging signals of change (technological, cultural, informational).
-2. **Predict:** The hedge layer converts signal coherence into probabilistic forecasts and deploys capital accordingly.
-3. **Prototype:** Startups embody these forecasts in the form of products, experiments, or protocols.
-4. **Prove:** Market feedback verifies or falsifies predictions, generating updated trust and accuracy scores.
-5. **Propagate:** The accelerator codifies verified insights and trains new participants, tightening the loop.
+### Core Components
 
-Each cycle increases the Pod's *Foresight Efficiency*—the ratio of realized future value to total time and capital invested.
+1. **Proximity Fund**: Pod-based temporal engines that compound foresight
+2. **$PROX Token**: Predictable crypto-economic model with trust-weighted mechanics
+3. **Mathlete Chain**: Trust-weighted ledger for verified understanding
 
 ---
 
-### 4. The Economic Function of Proximity
+## Documentation
 
-In standard finance, **alpha** measures performance beyond market expectation. In the Proximity to the Future Fund, **Temporal Alpha** measures performance beyond *collective time expectation*—how much earlier a system realizes the same insight relative to others.
+📚 **[Full Documentation Index](docs/INDEX.md)** - Complete guide to all documentation
 
-Formally:
+### Core Documentation
+- **[Purpose](docs/core/PURPOSE.md)**: Core purpose and objectives
+- **[Implementation Summary](docs/core/IMPLEMENTATION_SUMMARY.md)**: Complete repository overview
+- **[$PROX Tokenomics](docs/core/PROX_TOKENOMICS.md)**: Token design and economics
+- **[Mathlete Chain](docs/core/MATHLETE_CHAIN.md)**: Research verification ledger
 
-> Temporal Alpha (α_t) = (ΔV / ΔT_network)
+### Mathematical Foundations
+- **[Appendix A: Mathematical Foundations](docs/appendices/APPENDIX_A_MATHEMATICAL_FOUNDATIONS.md)**: Complete mathematical formulations (A1-A10)
 
-Where:
-
-* ΔV = verified value creation
-* ΔT_network = time between local verification and network verification
-
-Reducing ΔT_network creates both **economic leverage** (through earlier monetization) and **epistemic leverage** (through earlier understanding). The Pod therefore operates as a distributed temporal hedge—trading in futures of understanding, not merely assets.
-
----
-
-### 5. Risk Architecture: Trust as Collateral
-
-Because foresight without trust is speculation, every Pod is underwritten by a **Trust Index**—a continuously updated measure of ethical alignment, transparency, and predictive integrity. Capital allocation privileges not only accuracy but *verifiability and coherence*. This creates a form of *Conscious Leverage*, where scaling speed is proportional to alignment stability.
-
-> Leverage = f(Trust, Accuracy, Execution)
-
-Pods that misalign—by distorting data or overextending speculative bets—naturally lose capital velocity through the system's built-in dampening mechanisms (governance, peer verification, public metrics).
+### Guides
+- **[Model Validation](docs/guides/MODEL_VALIDATION.md)**: How to validate and test the model
+- **[Sensitivity Analysis](docs/guides/SENSITIVITY_ANALYSIS_README.md)**: Parameter sensitivity and ablation studies
 
 ---
 
-### 6. Scaling Mechanism: League Formation
+## Repository Structure
 
-As multiple Pods mature, they federate into **Leagues**—regional ecosystems that compete and collaborate via transparent metrics (predictive accuracy, ethical behavior, and value creation). The League serves as both market and referee, ensuring cross-pod accountability and collective learning.
-
-This design mirrors professional sports economics: shared infrastructure, open competition, and a media layer that turns innovation itself into a spectator event. The result is a **Conscious League of Founders**, where financial, intellectual, and social capital compound together.
-
----
-
-### 7. Benefits Summary
-
-| Stakeholder     | Traditional Outcome             | Proximity Fund Outcome                                      |
-| --------------- | --------------------------------- | ----------------------------------------------------------- |
-| **Researchers** | Publish papers, limited funding | Receive recurring capital tied to predictive accuracy       |
-| **Founders**    | Compete for scarce VC capital   | Share Pod resources, increase trust-based runway            |
-| **Investors**   | Bet on individual startups      | Invest in recursive foresight engine with diversified alpha |
-| **Communities** | Observe tech disruption         | Co-own local Pods, capture long-term trust dividends        |
-
----
-
-### 8. Case Example: Columbus 2025 Pod
-
-The inaugural Columbus Pod demonstrates the system in miniature:
-
-* **Research Cell:** Network Relativity studies on information verification time.
-* **Hedge Layer:** Early predictive capital into local trust-based innovation (e.g., Lindy Stability Index Fund).
-* **Startup Layer:** MotivateU 2.0, YSPN, and MetaSPN Core.
-* **Accelerator:** Shared governance, TrustOps dashboards, and founder training protocols.
-
-Results expected: 30–40% reduction in operational cost via shared services, 2–3x increase in research-to-market conversion speed, and measurable local trust gains.
+```
+proximity-to-the-future-fund/
+├── docs/                    # Documentation
+│   ├── core/               # Core documentation
+│   ├── appendices/         # Mathematical appendices
+│   └── guides/             # User guides
+├── src/                     # Source code
+│   ├── prove_model.py      # Core model implementation
+│   ├── prox_token_simulation.py
+│   ├── mathlete_token.py
+│   ├── mathlete_lifecycle_simulation.py
+│   ├── sensitivity_analysis.py
+│   └── visualize_sensitivity.py
+├── results/                 # Output files
+│   ├── figures/            # Visualization plots
+│   └── data/               # CSV data files
+├── requirements.txt        # Python dependencies
+└── README.md               # This file
+```
 
 ---
 
-### 9. Long-Term Vision: Conscious Temporal Capitalism
+## Key Concepts
 
-The Proximity to the Future Fund represents a new form of capitalism—**Conscious Temporal Capitalism**—where the frontier of profit is the reduction of time violence. Instead of extracting value from volatility, the system cultivates stability, meaning, and foresight as compounding assets.
+### Proximity to the Future
+The measurable ability to perceive, model, and act upon change faster than others without introducing instability. Defined as the **inverse of verification latency**.
 
-Each Pod functions as both an investment vehicle and a cultural organism. Together, Leagues of Pods form a planetary network of conscious accelerators—each anchored in local trust, each racing toward a shared future.
+### Pod
+A small, self-contained portfolio (3–6 startups) with a shared operational core and pooled research capital. Functions as a *time arbitrage machine* and *collective intelligence cell*.
 
-> The closer we move to understanding, the more valuable time becomes.
+### Temporal Alpha
+Performance beyond *collective time expectation*—how much earlier a system realizes the same insight relative to others.
 
----
-
----
-
-### 10. Mathematical Foundations
-
-For detailed mathematical formulations, proofs, and model validation, see [Appendix A: Mathematical Foundations of Temporal Compounding](APPENDIX_A_MATHEMATICAL_FOUNDATIONS.md).
-
-The model can be validated and simulated using the provided Python implementation (`prove_model.py`), which demonstrates:
-
-- Foresight Efficiency calculations
-- Recursive Compounding dynamics
-- Trust-Leverage relationships
-- Network Relativity effects
-- Temporal Alpha generation
-- Pod Coherence metrics
-- Time Violence scoring
+### Time Violence
+Operational entropy caused by misalignment or over-acceleration. Measured as: \(TV_t = \gamma_t T_t (1 - \tau_t)\)
 
 ---
 
-### 11. The Proximity Token ($PROX)
+## Ecosystem Architecture
 
-The mathematical framework of the Proximity to the Future Fund translates directly into a predictable crypto-economic model through the **Proximity Token ($PROX)**.
+### Three Integrated Layers
 
-$PROX implements:
-- **Predictable tokenomics** derived from observable state variables (F_t, L_t, τ_t, γ_t)
-- **Automatic minting** based on foresight efficiency and trust leverage
-- **Automatic burning** based on time violence (entropy and distrust)
-- **Trust-weighted staking** that rewards network coherence
-- **Adaptive monetary policy** that modulates speed to maintain stability
+1. **Research Layer (Mathlete Chain)**
+   - Verifies claims and reduces uncertainty
+   - Mathlete Tokens (MLT) represent research under verification
+   - Validators earn recognition weight through successful replications
 
-For complete tokenomics documentation, see [The Proximity Token ($PROX): A Predictable Crypto-Economic Model](PROX_TOKENOMICS.md).
+2. **Capital Layer (Proximity Fund)**
+   - Allocates capital based on verified foresight
+   - Pods function as temporal engines (hedge fund + accelerator + startup)
+   - Temporal Alpha measures performance beyond collective time expectation
 
-Token mechanics can be simulated using `prox_token_simulation.py`, which demonstrates:
-- Supply evolution over time
+3. **Token Layer ($PROX)**
+   - Rewards network coherence and verified understanding
+   - Predictable tokenomics derived from observable state variables
+   - Automatic minting based on foresight efficiency
+   - Automatic burning based on time violence
+
+---
+
+## Mathematical Framework
+
+All formulations are documented in [Appendix A](docs/appendices/APPENDIX_A_MATHEMATICAL_FOUNDATIONS.md):
+
+- **A1**: Foresight Efficiency
+- **A2**: Recursive Compounding Function
+- **A3**: Trust-Leverage Relationship
+- **A4**: Network Relativity Principle
+- **A5**: Total Compounded Understanding
+- **A6-A10**: Additional formulations
+
+---
+
+## Getting Started
+
+### 1. Validate the Model
+
+```bash
+python3 src/prove_model.py
+```
+
+This runs all validation tests and generates:
+- Model validation results
+- Pod simulation visualizations
+- Two-Pod comparison (A4 Network Relativity)
+
+### 2. Simulate Token Economics
+
+```bash
+python3 src/prox_token_simulation.py
+```
+
+Demonstrates $PROX token mechanics:
+- Supply evolution
 - Minting and burning dynamics
-- Staking reward calculations
+- Staking rewards
 - Predictability analysis
 
+### 3. Run Sensitivity Analysis
+
+```bash
+python3 src/sensitivity_analysis.py
+```
+
+Sweeps parameters and quantifies:
+- Parameter impact on key metrics
+- A4 causal lift (ablation study)
+- Optimal parameter combinations
+
+### 4. Simulate Mathlete Token Lifecycle
+
+```bash
+python3 src/mathlete_lifecycle_simulation.py
+```
+
+Shows how a research claim evolves:
+- Trust compounding over epochs
+- Uncertainty reduction
+- Time violence decline
+- Compounded understanding growth
+
 ---
 
-**Author:** Leo Guinan  
-**Affiliation:** Idea Nexus Ventures / MetaSPN  
-**Draft Date:** November 2025
+## Results
+
+All simulation results are saved in `results/`:
+
+- **figures/**: Visualization plots (PNG)
+- **data/**: Time series data (CSV)
+
+Key results:
+- Time-violence reduction: **99.88%** over 50 cycles
+- TV trend: **Negative (improving)**
+- Token supply: Self-regulating based on network state
+- A4 causal lift: Quantified improvement from Network Relativity
+
+---
+
+## Key Features
+
+✅ **Mathematically Validated**: All formulations tested and verified  
+✅ **Reproducible**: Fixed random seeds for consistency  
+✅ **Comprehensive**: Complete documentation and examples  
+✅ **Visualized**: Publication-ready plots and visualizations  
+✅ **Predictable**: Supply paths mathematically forecastable  
+✅ **Self-Regulating**: Automatic stabilization mechanisms  
+
+---
+
+## Contributing
+
+This is an open-fork project. Feel free to:
+- Fork and modify equations
+- Run local instances
+- Verify results
+- Extend the model
+
+See [Mathlete Chain](docs/core/MATHLETE_CHAIN.md) for the open-fork philosophy.
+
+---
+
+## License
+
+Public domain / CC-BY-SA — fork, verify, evolve.
+
+---
+
+## Author
+
+**Leo Guinan**  
+Idea Nexus Ventures / MetaSPN  
+November 2025
+
+---
+
+## Related Work
+
+- [Proximity to the Future Fund](docs/core/PURPOSE.md)
+- [Mathematical Foundations](docs/appendices/APPENDIX_A_MATHEMATICAL_FOUNDATIONS.md)
+- [$PROX Tokenomics](docs/core/PROX_TOKENOMICS.md)
+- [Mathlete Chain](docs/core/MATHLETE_CHAIN.md)
+
+---
+
+*"The closer we move to understanding, the more valuable time becomes."*
 
